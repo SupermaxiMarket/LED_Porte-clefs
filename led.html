@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porte-clés LED</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .product-image {
+            text-align: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-description {
+            margin-top: 20px;
+        }
+        .advantages, .comments, .order-form {
+            margin-top: 20px;
+        }
+        .order-form input[type="text"], .order-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .order-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .order-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="image-url.png" alt="Porte-clés LED">
+        </div>
+        <div class="product-description">
+            <h1>Porte-clés LED</h1>
+            <p>Les porte-clés LED sont des accessoires pratiques et élégants qui apportent une solution lumineuse à votre quotidien. Que ce soit pour trouver la serrure de votre porte dans l'obscurité ou pour ajouter une touche de style à votre trousseau de clés, nos porte-clés LED sont faits pour vous.</p>
+        </div>
+        <div class="advantages">
+            <h2>Avantages des porte-clés LED</h2>
+            <ul>
+                <li><strong>Lumière puissante et claire :</strong> La LED intégrée offre une lumière vive qui vous aide à voir clairement dans l'obscurité.</li>
+                <li><strong>Design compact et élégant :</strong> Facile à transporter et à utiliser, nos porte-clés LED se glissent dans n'importe quelle poche ou sac.</li>
+                <li><strong>Durabilité :</strong> Fabriqués avec des matériaux de haute qualité, ces porte-clés sont conçus pour durer.</li>
+                <li><strong>Polyvalence :</strong> Idéals pour les clés de maison, de voiture, de bureau ou comme accessoire de sac à dos.</li>
+                <li><strong>Batterie longue durée :</strong> Fonctionne avec une pile remplaçable qui assure une longue durée de vie.</li>
+            </ul>
+        </div>
+        <div class="comments">
+            <h2>Commentaires élogieux</h2>
+            <p><strong>Jean-Marc D. ★★★★★</strong><br> "Super pratique ! Le porte-clés LED m'a sauvé plus d'une fois dans le noir. Très utile et solide."</p>
+            <p><strong>Marie T. ★★★★★</strong><br> "J'adore le design compact et la lumière est étonnamment puissante pour un si petit gadget."</p>
+            <p><strong>Lucie P. ★★★★★</strong><br> "Un must-have pour tous ceux qui ont du mal à trouver leurs clés dans leur sac. Je recommande vivement !"</p>
+        </div>
+        <div class="order-form">
+            <h2>Commandez dès maintenant votre porte-clés LED !</h2>
+            <form action="process-order.php" method="post">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Adresse de livraison:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="quantity">Quantité:</label>
+                <input type="text" id="quantity" name="quantity" required>
+
+                <input type="submit" value="Commander">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
